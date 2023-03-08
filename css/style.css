@@ -1,0 +1,7 @@
+body{
+    background-color: aqua;
+}
+img{
+    width: 100px; /*ancho de la imagen */
+    height: 100px; /*alto de la imagen */
+}
