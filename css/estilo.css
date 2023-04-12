@@ -51,8 +51,8 @@ nav{
 }
 .nav .enlaces-header a:hover{
 color: white;
-background-color: red;
-border-color: red;
+background-color: aqua;
+border-color: aqua;
 transition: all ease-in-out .5s;
 }
 .titulospro{
@@ -101,3 +101,87 @@ transition: all ease-in-out .5s;
     text-transform: uppercase;
     box-shadow: 0 8px 32px rgba(97, 31, 31, 046);
  }
+
+ /* ############FOOTER########### */
+
+footer{
+    background: rgb(70,70,70);
+    padding: 50px 0 20px 0;
+    overflow: hidden;
+    display: flex;
+    flex-wrap: wrap;;
+    justify-content: space-evenly;
+    margin: auto;
+}
+.partFooter{
+    width: 22%;
+    text-align: center;
+}
+.partFooter>img{
+    width: 60%;
+}
+.partFooter>h4{
+    color: white;
+    font-size: 20px;
+    font-weight: 400;
+    margin-bottom: 15px;
+    background-color: aqua;
+    border-radius: 5px;
+    border: 1px solid aqua;
+    padding: 5px;
+}
+.contact{
+    margin: 10px;
+    display: block;
+    text-align: left;
+}
+.contact>i{
+    color: white;
+    float: left;
+    margin-right: 10px;
+    border: 1px solid white;
+    border-radius: 50%;
+    height: 30px;
+    width: 30px;
+    line-height: 28px;
+    text-align: center;
+    align-items: center;
+}
+.contact>p{
+    margin-left: 50px;
+    align-items: center;
+    line-height: 28px;
+    font-weight: 500;
+    color: white;
+}
+.partFooter>a{
+    display: block;
+    color: white;
+    text-decoration: none;
+    margin-bottom: 10px;
+    font-weight: 500;
+    padding: 5px;
+    border-radius: 5px;
+}
+.partFooter>a:hover{
+    background-color: aqua;
+    transition: all ease-in-out .6s;
+}
+.social_media>a>i{
+    font-size: 23px;
+    color: white;
+    display: inline-block;
+    border: 2px solid white;
+    border-radius: 50%;
+    width: 38px;
+    height: 38px;
+    line-height: 36px;
+    margin-top: 10px;
+    text-align: center;
+    margin-right: 5px;
+    transition: all ease-in-out .6s;
+}
+.social_media>a>i:hover{
+    background-color: aqua;
+    border-color: aqua;
+}
