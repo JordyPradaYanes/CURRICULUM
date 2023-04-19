@@ -51,8 +51,8 @@ nav{
 }
 .nav .enlaces-header a:hover{
 color: white;
-background-color: aqua;
-border-color: aqua;
+background-color: rgb(0, 89, 255);
+border-color: rgb(0, 89, 255);
 transition: all ease-in-out .5s;
 }
 .titulospro{
@@ -101,6 +101,88 @@ transition: all ease-in-out .5s;
     text-transform: uppercase;
     box-shadow: 0 8px 32px rgba(97, 31, 31, 046);
  }
+/* ############Education############ */
+.content-education{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 40px;
+    justify-content: space-around;
+    background-color: rgb(192, 191, 191);
+}
+.title{
+    width: 100%;
+    text-align: center;
+    display: block;
+    text-transform: uppercase;
+    margin-bottom: 30px;
+}
+.education{
+    width: 30%;
+    background-color: rgb(185, 181, 181) ;
+    border-radius:10px ;
+    padding: 30px;
+
+}
+.education:hover{
+    box-shadow: 0px 0px 20px gray;
+    transition: all ease-in-out;
+
+}
+.education a{
+    text-decoration: none;
+    font-size: 12px;
+    color: gray;
+}
+.education a:hover{
+    color: blue;
+}
+.education i{
+    color: blue;
+    font-size: 30px;
+    border-radius: 50%;
+    border: 3px solid blue;
+    width: 50px;
+    height: 50px;
+    line-height: 40px;
+    text-align: center;
+    align-items: center;
+
+}
+/* ############Certificados############ */
+.content-certificados{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 40px;
+}
+.certificado{
+    background-color: rgb(211, 210, 210);
+    border: 1px solid rgb(211, 210, 210);
+    border-radius: 5px;
+    width: 22%;
+    padding: 15px;
+    margin: 10px 10px;
+    text-align: center;
+}
+.certificado img{
+    height: 100px;
+    width: auto;
+    border-radius: 5px;
+}
+.certificado a{
+    color: rgb(146, 142, 142);
+    font-size: 12px;
+    text-decoration: none;
+}
+.certificado a:hover{
+     color: rgb(255, 255, 255);
+
+}
+.certificado:hover{
+    background-color: rgb(107, 107, 228);
+    color: whitesmoke;
+}
+
 
  /* ############FOOTER########### */
 
@@ -125,9 +207,9 @@ footer{
     font-size: 20px;
     font-weight: 400;
     margin-bottom: 15px;
-    background-color: aqua;
+    background-color: rgb(0, 89, 255);
     border-radius: 5px;
-    border: 1px solid aqua;
+    border: 1px solid rgb(0, 89, 255);
     padding: 5px;
 }
 .contact{
@@ -164,7 +246,7 @@ footer{
     border-radius: 5px;
 }
 .partFooter>a:hover{
-    background-color: aqua;
+    background-color: rgb(0, 89, 255);
     transition: all ease-in-out .6s;
 }
 .social_media>a>i{
@@ -182,6 +264,6 @@ footer{
     transition: all ease-in-out .6s;
 }
 .social_media>a>i:hover{
-    background-color: aqua;
-    border-color: aqua;
+    background-color: rgb(0, 89, 255);
+    border-color: rgb(0, 89, 255);
 }
