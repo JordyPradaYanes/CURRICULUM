@@ -23,7 +23,7 @@ let elev = 5^2;
 console.log(suma+"\n"+ resta+"\n"+multi+"\n"+divi+"\n"+module+"\n"+elev);
 
 //operadores de comparacion = / == / === / <> / >= / <= / > / <
-//operadores logicos AND && / OR || /
+//operadores logicos AND && / OR || 
 if(10>5){
     for(let i=0;i<array_string.length;i++){
         console.log(array_string[i]);
@@ -35,3 +35,5 @@ while (k>=j){
     console.log("Entra")
     j++;
 }
+
+
