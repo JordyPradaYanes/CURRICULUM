@@ -86,6 +86,7 @@ transition: all ease-in-out .5s;
     width: 300px;
     height: 300px;
     margin-left: 50px;
+    border-radius: 50%;
     animation: ease-in animacion 0.5s;
 }
 .contenido-header p{
@@ -226,6 +227,7 @@ footer{
 }
 .partFooter>img{
     width: 60%;
+    border-radius: 50%;
 }
 .partFooter>h4{
     color: white;
