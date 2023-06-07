@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+    </style>
+</head>
+<body>
+    <h1>Registro</h1>
+    <form id="form" action="" autocomplete="off">
+        <label for="">Name: </label>
+        <input id="name" type="text">
+        <br>
+        <label for="">Email: </label>
+        <input id="email" type="text">
+        <br>
+        <label for="">password: </label>
+        <input id="password" type="password">
+        <br>
+        <button id="enviar">Enviar</button>
+    </form>
+    <p id="espacioinfo"></p>
+</body>
+<script>
+    //expresionesregularesdejs
+    const form= document.getElementById("form");
+    const name= document.getElementById("name");
+    const email= document.getElementById("email");
+    const password= document.getElementById("password");
+    const espacioinfo= document.getElementById("espacioinfo");
+    form.addEventListener("submit",evento=>{
+        evento.preventDefault();
+        let info="";
+        let verificar=false;
+        let emailval=/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
+        if(name.value.length < 2){
+           
+            info+=("El nombre debe ser mayor de dos caracteres<br>");
+            verificar=true;
+        }
+        if(emailval.test(email.value)){
+            info+=("El email es incorrecto<br>");
+            verificar=true;
+        }
+        if(password.value.length > 8){
+            info+=("La contraseña debe tener 8 o mas caracteres<br>");
+            verificar=true;
+        }
+        if(verificar){
+            espacioinfo.innerHTML=info;
+            espacioinfo.style.color="red";
+        }
+        else{
+            espacioinfo.innerText="Enviado con exito";
+            espacioinfo.style.color="green";
+        }
+    });
+</script>
+</html>
